@@ -1,0 +1,154 @@
+html{
+    background-color: #ff8b60;
+}
+
+.body{
+    display : flex;
+    width : 100vw;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.naruto{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 15px solid #a55b41;
+    overflow: hidden;
+}
+
+.hair{
+    height: 90px;
+    background-color: rgb(220, 215, 104);
+    border-bottom: 5px solid rgb(206, 201, 104);
+}
+
+.hiddenleaf{
+    height: 60px;
+    background-color: rgb(77, 71, 71);
+}
+
+.hiddenleaf .plate{
+    width : 150px;
+    height : 45px;
+    background-color: rgb(206, 206, 206);
+    margin: 0 auto;
+    padding : 3px 0 0 0 ;
+    vertical-align: middle;
+    border-radius: 10px;
+    transform: translateY(6px);
+    overflow: hidden;
+}
+
+.plate::after{
+    content : '';
+    display : block;
+    width: 85px;
+    height : 60px;
+    margin-left: 100px;
+    margin-top: -5px;
+    background-color: rgb(181, 185, 195);
+    transform: skew(-45deg);
+}
+
+.face{
+    position: absolute;
+    top: 0;
+    width: 290px;
+    height: 290px;
+    background-color: rgb(242, 201, 190);
+    border-radius: 50%;
+    border: 5px solid rgb(223, 122, 85);
+    z-index : -1;
+}
+
+.lefteye{
+    position: absolute;
+    left : 25%;
+    top: 170px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid rgb(99, 138, 170);
+    z-index: 1;
+}
+
+.righteye{
+    position: absolute;
+    right : 25%;
+    top: 170px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid rgb(99, 138, 170);
+    z-index: 1;
+}
+
+.mouth{
+    position: absolute;
+    bottom : 10%;
+    left : 50%;
+    width: 75px;
+    height: 75px;
+    margin-left: -37px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: rgb(228, 158, 138);
+}
+
+.mouth::after{
+    content : '';
+    display: block;
+    width: 75px;
+    height: 40px;
+    background-color: #f2c9be;
+}
+
+.whisker{
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 12px solid transparent;
+    border-left: 70px solid #917972;
+    border-top: 12px solid transparent;
+    transform: rotate(-35deg);
+}
+
+/* left whiskers */
+.whisker:first-child{
+    top : 70%;
+}
+
+.whisker:nth-child(2){
+    top : 80%;
+}
+
+.whisker:nth-child(3){
+    top: 90%
+}
+
+/* right whiskers */
+.whisker:nth-child(4){
+    top: 70%;
+    right: 0;
+    transform: rotate(205deg);
+}
+
+.whisker:nth-child(5){
+    top: 80%;
+    right: 0;
+    transform: rotate(205deg);
+}
+
+.whisker:nth-child(6){
+    top: 90%;
+    right: 0;
+    transform: rotate(205deg);
+}

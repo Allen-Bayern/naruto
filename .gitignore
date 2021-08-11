@@ -27,5 +27,6 @@ Temporary Items
 .apdisk
 
 # parcel
-.parcel-cache/
-dist/
+
+.parcel-cache
+dist
